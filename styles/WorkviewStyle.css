@@ -14,3 +14,19 @@ button.cssbutton.secondary {border-width:0;background:#18355e;color:#fff;}
 button.cssbutton.tertiary {border-width:0;background:#8b9ebc;color:#fff;}
 button.cssbutton.transparent {background-color:transparent;border-color:#fff;}
 button.cssbutton.tall {padding:5px 20px 5px 20px;}
+
+input[type="checkbox"] {
+    margin: 3px 3px 3px 4px;
+}
+user agent stylesheet
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="radio"], input[type="checkbox"] {
+    background-color: initial;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
