@@ -26,7 +26,11 @@ input[type="checkbox"] {
 user agent stylesheet
 input[type="radio"], input[type="checkbox"] {
     background-color: initial;
-    margin: 3px 0.5ex;
+    margin: 1px 0.5px 30px 0px;
     padding: initial;
     border: initial;
+}
+
+.small {
+    font-size: 0.8em;
 }

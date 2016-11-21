@@ -91,6 +91,9 @@
                             <div>
                                 <button class="cssbutton tall primary" type="submit" ng-disabled="submitting">Log In</button>
                             </div>
+                            <div class="small">
+                                <a class="forgot" href="#forgot">Forgot Password?</a>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -100,7 +103,7 @@
                     <button ng-repeat="provider in providers" class="btn btn-social btn-{{provider.providerId}}" ng-click="providerLogin(provider)">{{provider.accountStore ? provider.accountStore.name : provider.providerId}}</button>
                 </div>
             </div>
-            <a class="forgot" href="#forgot">Forgot Password?</a>
+
         </div>
 
     </script>
