@@ -4,7 +4,7 @@
 #companylogo .work {font-family:'Ubuntu';color:#8b9ebc;font-size:4.45em;float:left;letter-spacing:-2px;margin-top:-2px;}
 #companylogo .view {font-family:'Ubuntu';color:#18355e;font-size:4.45em;float:left;letter-spacing:-2px;margin-top:-2px;}
 .tagline {text-align:right;color:#18355e;font-size:1.1em;margin:0 auto;}
-#div_login input[type=email], #div_login input[type=password] {width:calc(100% - 10px);padding:5px;margin:10px 0 10px 0;border:2px solid #C9C9C9;}
+#div_login input[type=email], #div_login input[type=password], #div_login input[type=text] {width:calc(100% - 10px);padding:5px;margin:10px 0 10px 0;border:2px solid #C9C9C9;}
 .center {color:#fff;}
 
 button.cssbutton {padding:1px 15px 3px 15px;text-decoration:none;border:1px solid #8399b0;color:#26466A;background:#fff;cursor:pointer}
