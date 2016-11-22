@@ -209,9 +209,9 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="form-group group-email" ng-class="{'has-error':notFound}" form-group>
-                            <label class="col-sm-6" ng-hide="retry">Send password reset instructions to:</label>
-                            <label class="col-sm-6" ng-show="retry">Send new password reset email to:</label>
+                        <div class="form-group group-email" ng-class="{'has-error':notFound}" form-group id="div_login">
+                            <label class="col-sm-6" ng-hide="retry">Send password reset instructions to</label>
+                            <label class="col-sm-6" ng-show="retry">Send new password reset email to</label>
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" name="email" placeholder="Email" form-control email-validation validate-on-blur />
                                 <small class="help-block wd-invalid-email" ng-show="validationError">Invalid email address</small>
@@ -224,7 +224,7 @@
                             <br />
                             <p>{{unknownError}}</p>
                         </div>
-                        <button class="cssbutton tall primary" ng-disabled="submitting" type="submit">Send Reset Password Email</button>
+                        <button class="cssbutton tall primary" ng-disabled="submitting" type="submit">Send Email</button>
                     </form>
                 </div>
             </div>
