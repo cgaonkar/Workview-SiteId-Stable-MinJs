@@ -44,3 +44,4 @@ input[type="radio"], input[type="checkbox"] {
     margin: 20px 0px;
 }
 
+a{color: #1753a5;text-decoration: none;cursor: pointer;}
