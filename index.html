@@ -14,7 +14,7 @@
     <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!--<link rel="stylesheet" href="styles/main.css">-->
-    <script src="scripts/vendor.js"></script>
+    <script src="scripts/vendor-min.js"></script>
     <link href="styles/WorkviewStyle.css" rel="stylesheet" />
 </head>
 <body ng-app="stormpathIdpApp">
@@ -35,12 +35,12 @@
                         <div class="tagline">Enterprise Work Management</div>
                     </div>
                     <div class="alert alert-danger bad-login" ng-show="errors.badLogin">
-                        Invalid username or password.
+                        This email and password combination was not found.Please log in again.
                     </div>
                     <div class="alert alert-danger not-found" ng-show="errors.notFound">
-                        <span>Account does not exist. Do you need to </span>
-                        <a href="#/register">create an account</a>
-                        <span>?</span>
+                        <span>Account does not exist.</span> <!--Do you need to </span>-->
+                        <!--<a href="#/register">create an account</a>-->
+                        <!--<span>?</span>-->
                     </div>
                     <div class="alert alert-danger" ng-show="errors.unknown">An unkown error has occurred</div>
                     <div class="alert alert-danger" ng-show="errors.emailPasswordRequired">Please enter your email and password.</div>

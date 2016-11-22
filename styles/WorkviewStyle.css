@@ -34,3 +34,6 @@ input[type="radio"], input[type="checkbox"] {
 .small {
     font-size: 0.8em;
 }
+
+.alert{color: #ea453c; font-size: 13px;}
+.alert-danger{margin-top:15px;}
