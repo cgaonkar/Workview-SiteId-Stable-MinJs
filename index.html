@@ -172,8 +172,18 @@
     </script>
     <script type="text/ng-template" id="views/forgot.html">
         <div class="view forgot-view" ng-show="ready">
-            <div class="box row">
+            <div style=" float: left; font-family: 'PT Sans',sans-serif; font-size: 0.9em; color: #18355e; line-height: 17px; width: 300px; background: #e5f5f9; border: 1px solid #cae0e5; border-radius: 10px;margin-left: 5%;">
+                <img src="images/settings/sign-in-security-icon.png" style="width: 25px; float: left; padding-top: 18px; margin-right: 10px; margin-left: 20px;">
+                <p>This page is using Stormpath Securities for user Authentication.</p>
+            </div>
+            <div class="box row" id="content">
                 <div class="col-sm-12">
+                    <div class="center" id="companylogo">
+                        <img src="images/Logos/login-icon.png"><span class="work">Work</span><span class="view">View</span>
+                        <br>
+                        <div class="tagline">Enterprise Work Management</div>
+                    </div>
+
                     <div class="header">
                         <span ng-show="!sent && !retry">Password Reset</span>
                         <span ng-show="retry">Reset link has expired</span>
@@ -214,7 +224,7 @@
                             <br />
                             <p>{{unknownError}}</p>
                         </div>
-                        <button class="btn btn-forgot btn-sp-green" ng-disabled="submitting" type="submit">Reset Password</button>
+                        <button class="cssbutton tall primary" ng-disabled="submitting" type="submit">Send Reset Password Email</button>
                     </form>
                 </div>
             </div>
