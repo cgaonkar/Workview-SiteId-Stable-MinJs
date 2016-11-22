@@ -183,7 +183,12 @@
                         <br>
                         <div class="tagline">Enterprise Work Management</div>
                     </div>
-
+                    <div class="alert alert-danger" ng-show="unknownError">
+                        <strong>Sorry, an error occured.  Please return to the previous page and try again.</strong>
+                        <br />
+                        <br />
+                        <p>{{unknownError}}</p>
+                    </div>
                     <div class="header">
                         <span ng-show="!sent && !retry">Password Reset</span>
                         <span ng-show="retry">Reset link has expired</span>
@@ -218,20 +223,14 @@
                                 <small class="help-block wd-not-found alert" ng-show="notFound"><span>Account does not exist.</span></small>
                             </div>
                         </div>
-                        <div class="alert alert-danger" ng-show="unknownError">
-                            <strong>Sorry, an error occured.  Please return to the previous page and try again.</strong>
-                            <br />
-                            <br />
-                            <p>{{unknownError}}</p>
-                        </div>
-                        <button class="cssbutton tall primary" ng-disabled="submitting" type="submit" style="margin-top:25px;">Send Email</button>
+                        <button class="cssbutton tall primary" ng-disabled="submitting" type="submit" style="margin-top:15px;">Send Email</button>
                         <div class="small" style="margin-top:32px;">
                             <a ng-show="!sent" class="to-login" href="#/" wd-back-to-login>Back to Log In</a>
                         </div>
                     </form>
                 </div>
             </div>
-            
+
         </div>
     </script>
     <script type="text/ng-template" id="views/reset.html">
